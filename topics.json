@@ -80,7 +80,8 @@
     "id": 12,
     "topic": "The prompt that turns any AI into your personal strategic advisor",
     "category": "ai_tip",
-    "used": false
+    "used": true,
+    "used_date": "2026-04-10"
   },
   {
     "id": 13,
