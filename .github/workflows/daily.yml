@@ -1,0 +1,40 @@
+name: Daily AI Wisdom
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  generate-post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install anthropic requests python-dotenv Pillow
+
+      - name: Run agent
+        run: python agent.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BRAVE_API_KEY:     ${{ secrets.BRAVE_API_KEY }}
+          EMAIL_USER:        ${{ secrets.EMAIL_USER }}
+          EMAIL_PASSWORD:    ${{ secrets.EMAIL_PASSWORD }}
+          EMAIL_TO:          ${{ secrets.EMAIL_TO }}
+
+      - name: Save updated files
+        run: |
+          git config user.name "Daily AI Wisdom Bot"
+          git config user.email "bot@dailyaiwisdom.com"
+          git add topics.json posts_log.json || true
+          git diff --staged --quiet || git commit -m "Post: $(date '+%Y-%m-%d')"
+          git push
