@@ -64,7 +64,7 @@ def get_todays_topic() -> str:
 
 def check_recent_posts(days: int = 14) -> str:
     try:
-        with open(POSTS_LOG, "r") as f:
+        with open(POSTS_LOG, "r", encoding="utf-8", errors="ignore") as f:
             posts = json.load(f)
         recent = [p.get("topic", p.get("text", "")[:50]) for p in posts[-days:]]
         if not recent:

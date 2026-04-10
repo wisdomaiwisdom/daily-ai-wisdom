@@ -108,7 +108,7 @@ def run_agent() -> str:
 def save_post(post_text: str):
     """Save the post to the log file."""
     try:
-        with open(POSTS_LOG, "r") as f:
+     with open(POSTS_LOG, "r", encoding="utf-8", errors="ignore") as f:
             posts = json.load(f)
     except FileNotFoundError:
         posts = []
