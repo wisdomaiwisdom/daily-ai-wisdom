@@ -87,7 +87,8 @@
     "id": 13,
     "topic": "Why most people use AI wrong and the simple fix",
     "category": "ai_tip",
-    "used": false
+    "used": true,
+    "used_date": "2026-04-11"
   },
   {
     "id": 14,
