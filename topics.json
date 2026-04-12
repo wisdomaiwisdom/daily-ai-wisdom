@@ -94,7 +94,8 @@
     "id": 14,
     "topic": "3 ways professionals are saving 2 hours a day with AI",
     "category": "ai_tip",
-    "used": false
+    "used": true,
+    "used_date": "2026-04-12"
   },
   {
     "id": 15,
