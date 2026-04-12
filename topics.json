@@ -3,104 +3,105 @@
     "id": 1,
     "topic": "Why successful people think differently about failure",
     "category": "motivational",
-    "used": true,
+    "used": false,
     "used_date": "2026-04-08"
   },
   {
     "id": 2,
     "topic": "The habit that separates good from exceptional leaders",
     "category": "motivational",
-    "used": true,
+    "used": false,
     "used_date": "2026-04-08"
   },
   {
     "id": 3,
     "topic": "Why most people stop just before the breakthrough",
     "category": "motivational",
-    "used": true,
+    "used": false,
     "used_date": "2026-04-08"
   },
   {
     "id": 4,
     "topic": "The morning routine that changes how you make decisions",
     "category": "motivational",
-    "used": true,
+    "used": false,
     "used_date": "2026-04-08"
   },
   {
     "id": 5,
     "topic": "What fear of failure is actually telling you",
     "category": "motivational",
-    "used": true,
+    "used": false,
     "used_date": "2026-04-08"
   },
   {
     "id": 6,
     "topic": "Why clarity beats motivation every single time",
     "category": "motivational",
-    "used": true,
+    "used": false,
     "used_date": "2026-04-08"
   },
   {
     "id": 7,
     "topic": "The difference between being busy and being productive",
     "category": "motivational",
-    "used": true,
+    "used": false,
     "used_date": "2026-04-08"
   },
   {
     "id": 8,
     "topic": "How the best decisions get made under pressure",
     "category": "motivational",
-    "used": true,
+    "used": false,
     "used_date": "2026-04-08"
   },
   {
     "id": 9,
     "topic": "Why your network determines your next big opportunity",
     "category": "motivational",
-    "used": true,
+    "used": false,
     "used_date": "2026-04-08"
   },
   {
     "id": 10,
     "topic": "The mindset shift that unlocks real professional growth",
     "category": "motivational",
-    "used": true,
+    "used": false,
     "used_date": "2026-04-10"
   },
   {
     "id": 11,
     "topic": "How to use AI to make better decisions faster",
     "category": "ai_tip",
-    "used": true,
+    "used": false,
     "used_date": "2026-04-10"
   },
   {
     "id": 12,
     "topic": "The prompt that turns any AI into your personal strategic advisor",
     "category": "ai_tip",
-    "used": true,
+    "used": false,
     "used_date": "2026-04-10"
   },
   {
     "id": 13,
     "topic": "Why most people use AI wrong and the simple fix",
     "category": "ai_tip",
-    "used": true,
+    "used": false,
     "used_date": "2026-04-11"
   },
   {
     "id": 14,
     "topic": "3 ways professionals are saving 2 hours a day with AI",
     "category": "ai_tip",
-    "used": true,
+    "used": false,
     "used_date": "2026-04-12"
   },
   {
     "id": 15,
     "topic": "The AI skill that will matter most in the next 5 years",
     "category": "ai_tip",
-    "used": false
+    "used": false,
+    "used_date": "2026-04-12"
   }
 ]
