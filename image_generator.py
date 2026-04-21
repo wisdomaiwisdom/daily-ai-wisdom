@@ -174,7 +174,6 @@ def draw_logo(img, draw, x, y, size):
         font=f_wisdom,
         fill=LOGO_TEXT
     )
-
 def generate_card(post_text: str, theme_index: int = None) -> str:
     os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
