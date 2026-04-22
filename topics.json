@@ -74,7 +74,11 @@
     "topic": "How to use AI to make better decisions faster",
     "category": "ai_tip",
     "used": true,
+<<<<<<< HEAD
     "used_date": "2026-04-21"
+=======
+    "used_date": "2026-04-22"
+>>>>>>> 6d094c8ebcb387da809140bd57c0d312d85570f3
   },
   {
     "id": 12,

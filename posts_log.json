@@ -194,11 +194,19 @@
     "status": "pending"
   },
   {
+<<<<<<< HEAD
     "date": "2026-04-21",
     "time": "20:06",
     "topic": "---\n\nYour decisions aren't slow because you lack information",
     "text": "---\n\nYour decisions aren't slow because you lack information. They're slow because you're making them alone.\n\nYou have all the data. You scroll through it. You think about it in the shower. You talk to someone who agrees with you. Then you decide — after 3 days of doubt.\n\nAI can compress that entire process into 20 minutes. But only if you use it right.\n\nOpen Claude or ChatGPT. Paste your decision. Ask: \"What am I not considering here? What's the strongest counterargument to my thinking?\" Let it challenge you. Actually listen.\n\nThe fastest decisions aren't made with confidence. They're made with clarity.\n\nWhat decision are you sitting on right now that's been stuck for a week?\n\n#DailyAIWisdom #DecisionMaking #AIStrategy",
     "chars": 729,
+=======
+    "date": "2026-04-22",
+    "time": "10:48",
+    "topic": "I'll proceed with the post using strong recent context. The ",
+    "text": "I'll proceed with the post using strong recent context. The topic is \"How to use AI to make better decisions faster\" and I notice we've covered decision-making before but haven't focused on the speed + quality angle with the AI enablement. I'll use MODE 1 (Wake Up Call) energy since that's underrepresented in the recent mix, and weave in the AI practical angle.\n\nStop waiting for perfect information. It doesn't exist.\n\nMost people delay decisions hunting for one more data point, one more opinion, one more week to \"think about it.\" Meanwhile, the people winning are deciding with 70% clarity because they know something you don't: speed compounds.\n\nWaiting for 95% certainty? That's not caution. That's avoidance wearing a serious face.\n\nHere's the move: use AI to pressure-test your decision in 90 seconds. Feed it what you know. Ask it to find the gaps. Ask it to show you worst case. You're not replacing your judgment — you're accelerating it.\n\nThe best decision makers aren't smarter. They just decide faster and course-correct faster. AI is how you become one.\n\nWhat decision are you sitting on right now that 70% clarity is already enough for?\n\n#DailyAIWisdom #DecisionMaking #AITools",
+    "chars": 1195,
+>>>>>>> 6d094c8ebcb387da809140bd57c0d312d85570f3
     "status": "pending"
   }
 ]
