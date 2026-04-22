@@ -1,111 +1,32 @@
 [
-  {
-    "id": 1,
-    "topic": "Why successful people think differently about failure",
-    "category": "motivational",
-    "used": true,
-    "used_date": "2026-04-12"
-  },
-  {
-    "id": 2,
-    "topic": "The habit that separates good from exceptional leaders",
-    "category": "motivational",
-    "used": true,
-    "used_date": "2026-04-13"
-  },
-  {
-    "id": 3,
-    "topic": "Why most people stop just before the breakthrough",
-    "category": "motivational",
-    "used": true,
-    "used_date": "2026-04-14"
-  },
-  {
-    "id": 4,
-    "topic": "The morning routine that changes how you make decisions",
-    "category": "motivational",
-    "used": true,
-    "used_date": "2026-04-15"
-  },
-  {
-    "id": 5,
-    "topic": "What fear of failure is actually telling you",
-    "category": "motivational",
-    "used": true,
-    "used_date": "2026-04-16"
-  },
-  {
-    "id": 6,
-    "topic": "Why clarity beats motivation every single time",
-    "category": "motivational",
-    "used": true,
-    "used_date": "2026-04-17"
-  },
-  {
-    "id": 7,
-    "topic": "The difference between being busy and being productive",
-    "category": "motivational",
-    "used": true,
-    "used_date": "2026-04-18"
-  },
-  {
-    "id": 8,
-    "topic": "How the best decisions get made under pressure",
-    "category": "motivational",
-    "used": true,
-    "used_date": "2026-04-19"
-  },
-  {
-    "id": 9,
-    "topic": "Why your network determines your next big opportunity",
-    "category": "motivational",
-    "used": true,
-    "used_date": "2026-04-20"
-  },
-  {
-    "id": 10,
-    "topic": "The mindset shift that unlocks real professional growth",
-    "category": "motivational",
-    "used": true,
-    "used_date": "2026-04-21"
-  },
-  {
-    "id": 11,
-    "topic": "How to use AI to make better decisions faster",
-    "category": "ai_tip",
-    "used": true,
-<<<<<<< HEAD
-    "used_date": "2026-04-21"
-=======
-    "used_date": "2026-04-22"
->>>>>>> 6d094c8ebcb387da809140bd57c0d312d85570f3
-  },
-  {
-    "id": 12,
-    "topic": "The prompt that turns any AI into your personal strategic advisor",
-    "category": "ai_tip",
-    "used": false,
-    "used_date": "2026-04-10"
-  },
-  {
-    "id": 13,
-    "topic": "Why most people use AI wrong and the simple fix",
-    "category": "ai_tip",
-    "used": false,
-    "used_date": "2026-04-11"
-  },
-  {
-    "id": 14,
-    "topic": "3 ways professionals are saving 2 hours a day with AI",
-    "category": "ai_tip",
-    "used": false,
-    "used_date": "2026-04-12"
-  },
-  {
-    "id": 15,
-    "topic": "The AI skill that will matter most in the next 5 years",
-    "category": "ai_tip",
-    "used": false,
-    "used_date": "2026-04-12"
-  }
+  {"id": 1,  "topic": "Why successful people think differently about failure", "category": "motivational", "used": false},
+  {"id": 2,  "topic": "The habit that separates good from exceptional leaders", "category": "motivational", "used": false},
+  {"id": 3,  "topic": "Why most people stop just before the breakthrough", "category": "motivational", "used": false},
+  {"id": 4,  "topic": "The morning routine that changes how you make decisions", "category": "motivational", "used": false},
+  {"id": 5,  "topic": "What fear of failure is actually telling you", "category": "motivational", "used": false},
+  {"id": 6,  "topic": "Why clarity beats motivation every single time", "category": "motivational", "used": false},
+  {"id": 7,  "topic": "The difference between being busy and being productive", "category": "motivational", "used": false},
+  {"id": 8,  "topic": "How the best decisions get made under pressure", "category": "motivational", "used": false},
+  {"id": 9,  "topic": "Why your network determines your next big opportunity", "category": "motivational", "used": false},
+  {"id": 10, "topic": "The mindset shift that unlocks real professional growth", "category": "motivational", "used": false},
+  {"id": 11, "topic": "How to use AI to make better decisions faster", "category": "ai_tip", "used": false},
+  {"id": 12, "topic": "The prompt that turns any AI into your personal strategic advisor", "category": "ai_tip", "used": false},
+  {"id": 13, "topic": "Why most people use AI wrong and the simple fix", "category": "ai_tip", "used": false},
+  {"id": 14, "topic": "3 ways professionals are saving 2 hours a day with AI", "category": "ai_tip", "used": false},
+  {"id": 15, "topic": "The AI skill that will matter most in the next 5 years", "category": "ai_tip", "used": false},
+  {"id": 16, "topic": "You are not behind. You are just not moving.", "category": "harsh", "used": false},
+  {"id": 17, "topic": "Nobody is coming to save your career", "category": "harsh", "used": false},
+  {"id": 18, "topic": "Your comfort zone is not protecting you. It is shrinking you.", "category": "harsh", "used": false},
+  {"id": 19, "topic": "Stop waiting to feel ready. Ready is a myth.", "category": "harsh", "used": false},
+  {"id": 20, "topic": "The version of you from 5 years ago would be disappointed", "category": "harsh", "used": false},
+  {"id": 21, "topic": "You read about success more than you chase it", "category": "harsh", "used": false},
+  {"id": 22, "topic": "Most people will plan a vacation better than they plan their career", "category": "harsh", "used": false},
+  {"id": 23, "topic": "Stop calling it bad luck. Start calling it bad decisions.", "category": "harsh", "used": false},
+  {"id": 24, "topic": "Your potential means nothing without execution", "category": "harsh", "used": false},
+  {"id": 25, "topic": "The world does not reward smart people. It rewards moving people.", "category": "harsh", "used": false},
+  {"id": 26, "topic": "AI will not take your job. Someone using AI better than you will.", "category": "ai_tip", "used": false},
+  {"id": 27, "topic": "How to use AI to prepare for any meeting in 5 minutes", "category": "ai_tip", "used": false},
+  {"id": 28, "topic": "The one AI prompt that replaces an hour of research", "category": "ai_tip", "used": false},
+  {"id": 29, "topic": "Why most people fail at using AI and what they do wrong", "category": "harsh", "used": false},
+  {"id": 30, "topic": "You have the same 24 hours as everyone who changed the world", "category": "harsh", "used": false}
 ]
