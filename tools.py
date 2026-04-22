@@ -1,4 +1,5 @@
 import json
+import re
 import requests
 import os
 from datetime import datetime
@@ -35,28 +36,28 @@ def search_web(query: str) -> str:
 
 def get_todays_topic() -> str:
     try:
-        with open(TOPICS_FILE, "r") as f:
+        with open(TOPICS_FILE, "r", encoding="utf-8") as f:
             topics = json.load(f)
         for topic in topics:
-            if not topic["used"]:
+            if not topic.get("used", False):
                 topic["used"] = True
                 topic["used_date"] = datetime.now().strftime("%Y-%m-%d")
-                with open(TOPICS_FILE, "w") as f:
+                with open(TOPICS_FILE, "w", encoding="utf-8") as f:
                     json.dump(topics, f, indent=2)
                 return json.dumps({
-                    "topic": topic["topic"],
+                    "topic":    topic["topic"],
                     "category": topic["category"],
-                    "id": topic["id"]
+                    "id":       topic["id"]
                 })
         # All used — reset
         for topic in topics:
             topic["used"] = False
-        with open(TOPICS_FILE, "w") as f:
+        with open(TOPICS_FILE, "w", encoding="utf-8") as f:
             json.dump(topics, f, indent=2)
         return json.dumps({
-            "topic": topics[0]["topic"],
+            "topic":    topics[0]["topic"],
             "category": topics[0]["category"],
-            "note": "Topics cycled — starting fresh"
+            "note":     "Topics cycled — starting fresh"
         })
     except FileNotFoundError:
         return json.dumps({"error": "topics.json not found"})
@@ -72,15 +73,23 @@ def check_recent_posts(days: int = 14) -> str:
         return "Recent topics covered:\n" + "\n".join(f"- {t}" for t in recent)
     except FileNotFoundError:
         return "No post history yet — this is the first post."
-def get_trending_hashtags(topic: str, category: str) -> str:
-    """
-    Search for trending LinkedIn hashtags for this topic.
-    Returns top hashtags with follower counts where possible.
-    """
+
+
+def _fallback_hashtags(category: str) -> str:
+    defaults = {
+        "harsh":        "#DailyAIWisdom #Leadership #GrowthMindset",
+        "motivational": "#DailyAIWisdom #Leadership #Motivation",
+        "ai_tip":       "#DailyAIWisdom #AIProductivity #FutureOfWork",
+        "comedy":       "#DailyAIWisdom #Leadership #WorkLife",
+    }
+    tags = defaults.get(category, "#DailyAIWisdom #Leadership #AI")
+    return f"USE THESE HASHTAGS: {tags}\nUse all 3 exactly as shown."
+
+
+def get_trending_hashtags(topic: str, category: str = "motivational") -> str:
     api_key = os.getenv("BRAVE_API_KEY")
     if not api_key:
         return _fallback_hashtags(category)
-
     try:
         response = requests.get(
             "https://api.search.brave.com/res/v1/web/search",
@@ -89,7 +98,7 @@ def get_trending_hashtags(topic: str, category: str) -> str:
                 "X-Subscription-Token": api_key
             },
             params={
-                "q": f"trending LinkedIn hashtags {topic} 2026 most followed",
+                "q": f"trending LinkedIn hashtags {topic} 2026",
                 "count": 5
             },
             timeout=10
@@ -97,15 +106,12 @@ def get_trending_hashtags(topic: str, category: str) -> str:
         data = response.json()
         results = data.get("web", {}).get("results", [])
 
-        # Extract any hashtags mentioned in results
-        import re
         found_tags = []
         for r in results[:3]:
             text = r.get("title", "") + " " + r.get("description", "")
             tags = re.findall(r'#[A-Za-z][A-Za-z0-9]+', text)
             found_tags.extend(tags)
 
-        # Deduplicate and filter
         seen = set()
         unique_tags = []
         for tag in found_tags:
@@ -126,17 +132,6 @@ def get_trending_hashtags(topic: str, category: str) -> str:
     except Exception:
         return _fallback_hashtags(category)
 
-
-def _fallback_hashtags(category: str) -> str:
-    """Return strong default hashtags by category."""
-    defaults = {
-        "harsh":       "#DailyAIWisdom #Leadership #GrowthMindset",
-        "motivational": "#DailyAIWisdom #Leadership #Motivation",
-        "ai_tip":      "#DailyAIWisdom #AIProductivity #FutureOfWork",
-        "comedy":      "#DailyAIWisdom #Leadership #WorkLife",
-    }
-    tags = defaults.get(category, "#DailyAIWisdom #Leadership #AI")
-    return f"USE THESE HASHTAGS: {tags}\nUse all 3 exactly as shown."
 
 def execute_tool(tool_name: str, tool_input: dict) -> str:
     if tool_name == "search_web":
@@ -176,24 +171,10 @@ TOOLS = [
         }
     },
     {
-        "name": "search_web",
-        "description": "Search for real-world examples and data to make the post feel current and grounded.",
-        "input_schema": {
-            "type": "object",
-            "properties": {
-                "query": {
-                    "type": "string",
-                    "description": "A focused search query to find relevant examples."
-                }
-            },
-            "required": ["query"]
-        }
-    }
-    {
         "name": "get_trending_hashtags",
         "description": (
             "Search for trending LinkedIn hashtags for today's topic. "
-            "Call this AFTER get_todays_topic to get the best hashtags. "
+            "Call this AFTER get_todays_topic. "
             "Returns 2 trending hashtags plus #DailyAIWisdom."
         ),
         "input_schema": {
@@ -209,6 +190,23 @@ TOOLS = [
                 }
             },
             "required": ["topic"]
+        }
+    },
+    {
+        "name": "search_web",
+        "description": (
+            "Search for real-world examples, statistics, and stories "
+            "to make the post feel current and grounded."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "query": {
+                    "type": "string",
+                    "description": "A focused search query."
+                }
+            },
+            "required": ["query"]
         }
     }
 ]
