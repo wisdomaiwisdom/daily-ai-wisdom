@@ -1,187 +1,192 @@
 [
   {
     "id": 1,
-    "topic": "Why successful people think differently about failure",
-    "category": "motivational",
+    "topic": "The meeting that took 3 hours needed 3 minutes of thinking beforehand",
+    "category": "harsh",
     "used": true,
     "used_date": "2026-04-22"
   },
   {
     "id": 2,
-    "topic": "The habit that separates good from exceptional leaders",
-    "category": "motivational",
+    "topic": "The promotion went to someone less qualified \u2014 here is why",
+    "category": "harsh",
     "used": true,
     "used_date": "2026-04-22"
   },
   {
     "id": 3,
-    "topic": "Why most people stop just before the breakthrough",
-    "category": "motivational",
+    "topic": "You don't have a time problem. You have a clarity problem.",
+    "category": "harsh",
     "used": true,
     "used_date": "2026-04-22"
   },
   {
     "id": 4,
-    "topic": "The morning routine that changes how you make decisions",
-    "category": "motivational",
+    "topic": "The idea that got rejected in the room was approved when someone else said it 6 months later",
+    "category": "harsh",
     "used": true,
     "used_date": "2026-04-22"
   },
   {
     "id": 5,
-    "topic": "What fear of failure is actually telling you",
-    "category": "motivational",
+    "topic": "Hard work without direction is just expensive confusion",
+    "category": "harsh",
     "used": true,
     "used_date": "2026-04-22"
   },
   {
     "id": 6,
-    "topic": "Why clarity beats motivation every single time",
+    "topic": "Confidence comes after action \u2014 not before it",
     "category": "motivational",
-    "used": false
+    "used": true,
+    "used_date": "2026-04-22"
   },
   {
     "id": 7,
-    "topic": "The difference between being busy and being productive",
-    "category": "motivational",
-    "used": false
+    "topic": "Busy and productive feel identical from the inside but look completely different from outside",
+    "category": "harsh",
+    "used": true,
+    "used_date": "2026-04-22"
   },
   {
     "id": 8,
-    "topic": "How the best decisions get made under pressure",
-    "category": "motivational",
-    "used": false
+    "topic": "The 96 times a day phone check and why deep work never happens",
+    "category": "harsh",
+    "used": true,
+    "used_date": "2026-04-22"
   },
   {
     "id": 9,
-    "topic": "Why your network determines your next big opportunity",
-    "category": "motivational",
-    "used": false
+    "topic": "Trees can move. A bad job is not a tree.",
+    "category": "comedy",
+    "used": true,
+    "used_date": "2026-04-22"
   },
   {
     "id": 10,
-    "topic": "The mindset shift that unlocks real professional growth",
-    "category": "motivational",
-    "used": false
+    "topic": "The blank journal with the inspiring cover",
+    "category": "comedy",
+    "used": true,
+    "used_date": "2026-04-22"
   },
   {
     "id": 11,
-    "topic": "How to use AI to make better decisions faster",
-    "category": "ai_tip",
+    "topic": "156 hours a year explaining what you already did",
+    "category": "harsh",
     "used": false
   },
   {
     "id": 12,
-    "topic": "The prompt that turns any AI into your personal strategic advisor",
-    "category": "ai_tip",
+    "topic": "The 14-person meeting where 3 people were actually needed",
+    "category": "comedy",
     "used": false
   },
   {
     "id": 13,
-    "topic": "Why most people use AI wrong and the simple fix",
-    "category": "ai_tip",
+    "topic": "Career advice is written by people who succeeded in a world that no longer exists",
+    "category": "harsh",
     "used": false
   },
   {
     "id": 14,
-    "topic": "3 ways professionals are saving 2 hours a day with AI",
-    "category": "ai_tip",
+    "topic": "The update email that 3 of 12 people read and 1 acted on",
+    "category": "harsh",
     "used": false
   },
   {
     "id": 15,
-    "topic": "The AI skill that will matter most in the next 5 years",
+    "topic": "70% of AI pilots fail \u2014 and why it is never the technology that fails",
     "category": "ai_tip",
     "used": false
   },
   {
     "id": 16,
-    "topic": "You are not behind. You are just not moving.",
-    "category": "harsh",
+    "topic": "Asking AI to do tasks vs asking AI to challenge your thinking",
+    "category": "ai_tip",
     "used": false
   },
   {
     "id": 17,
-    "topic": "Nobody is coming to save your career",
-    "category": "harsh",
+    "topic": "The 90-second AI update vs the 90-minute meeting about the update",
+    "category": "ai_tip",
     "used": false
   },
   {
     "id": 18,
-    "topic": "Your comfort zone is not protecting you. It is shrinking you.",
-    "category": "harsh",
+    "topic": "Monday journal Tuesday podcast Friday nothing changed",
+    "category": "comedy",
     "used": false
   },
   {
     "id": 19,
-    "topic": "Stop waiting to feel ready. Ready is a myth.",
+    "topic": "The job you have vs the job you are doing while pretending to have it",
     "category": "harsh",
     "used": false
   },
   {
     "id": 20,
-    "topic": "The version of you from 5 years ago would be disappointed",
+    "topic": "The 3 conversations you never had that someone else had and got promoted",
     "category": "harsh",
     "used": false
   },
   {
     "id": 21,
-    "topic": "You read about success more than you chase it",
-    "category": "harsh",
+    "topic": "Waiting to feel ready is waiting for something that only starts when you stop waiting",
+    "category": "motivational",
     "used": false
   },
   {
     "id": 22,
-    "topic": "Most people will plan a vacation better than they plan their career",
-    "category": "harsh",
+    "topic": "The email you spent 45 minutes writing got a 3-second reply",
+    "category": "comedy",
     "used": false
   },
   {
     "id": 23,
-    "topic": "Stop calling it bad luck. Start calling it bad decisions.",
+    "topic": "Your potential is not the problem. The next step is.",
     "category": "harsh",
     "used": false
   },
   {
     "id": 24,
-    "topic": "Your potential means nothing without execution",
+    "topic": "The person who gets credit for your idea because they said it louder",
     "category": "harsh",
     "used": false
   },
   {
     "id": 25,
-    "topic": "The world does not reward smart people. It rewards moving people.",
-    "category": "harsh",
+    "topic": "35000 decisions a day and most are made by default",
+    "category": "ai_tip",
     "used": false
   },
   {
     "id": 26,
-    "topic": "AI will not take your job. Someone using AI better than you will.",
-    "category": "ai_tip",
+    "topic": "The 66 days to build a habit and why people quit on day 4",
+    "category": "harsh",
     "used": false
   },
   {
     "id": 27,
-    "topic": "How to use AI to prepare for any meeting in 5 minutes",
-    "category": "ai_tip",
+    "topic": "Bring your whole self to work \u2014 the whole self needs a nap",
+    "category": "comedy",
     "used": false
   },
   {
     "id": 28,
-    "topic": "The one AI prompt that replaces an hour of research",
-    "category": "ai_tip",
+    "topic": "The best listeners who occasionally say something unforgettable",
+    "category": "motivational",
     "used": false
   },
   {
     "id": 29,
-    "topic": "Why most people fail at using AI and what they do wrong",
+    "topic": "6 years of life on social media \u2014 what else that equals",
     "category": "harsh",
     "used": false
   },
   {
     "id": 30,
-    "topic": "You have the same 24 hours as everyone who changed the world",
-    "category": "harsh",
+    "topic": "The AI skill that separates the 30% whose pilots succeed from the 70% whose fail",
+    "category": "ai_tip",
     "used": false
   }
 ]

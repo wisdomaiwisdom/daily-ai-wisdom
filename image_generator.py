@@ -1,5 +1,6 @@
 from PIL import Image, ImageDraw, ImageFont
 import os
+import json
 from datetime import datetime
 
 OUTPUT_FOLDER = "generated_images"
@@ -65,39 +66,36 @@ def clean_text(text: str) -> str:
 
 
 def extract_best_line(post_text: str) -> str:
-    """Extract the most powerful line from the post."""
-    # Clean the text first
-    text = clean_text(post_text)
-
-    # Split into lines and filter
+    """Extract the hook — best line from the TOP of the post."""
+    text  = clean_text(post_text)
     lines = [l.strip() for l in text.strip().split("\n") if l.strip()]
 
-    # Remove hashtags, separators, and very short lines
+    # Remove hashtags, separators, questions, very short or very long lines
     lines = [
         l for l in lines
         if not l.startswith("#")
-        and not all(c in "-=_ " for c in l)  # removes --- === ___
-        and len(l) > 20
+        and not all(c in "-=_ " for c in l)
+        and not l.endswith("?")
+        and 15 < len(l) < 90
     ]
 
     if not lines:
         return "Every day is a chance to grow."
 
+    # Score — EARLIER lines score higher (we want the hook)
     scored = []
-    total = len(lines)
+    total  = len(lines)
     for i, line in enumerate(lines):
-        if line.endswith("?"):
-            continue
-        if len(line) > 85:
-            continue
-
-        position_score = i / total
-        length_score   = 1 - (len(line) / 85)
-        power_words    = ["don't", "never", "always", "best", "real",
-                          "truth", "only", "most", "every", "stop",
-                          "wake", "start", "win", "fear", "clear",
-                          "gap", "not", "quit", "smarter", "harder"]
-        power_score    = sum(1 for w in power_words if w in line.lower()) * 0.2
+        position_score = (1 - (i / total)) * 8   # hook always wins — absolute priority
+        length_score   = 1 - (len(line) / 90)
+        power_words    = [
+            "don't", "never", "always", "truth", "only",
+            "stop", "start", "zero", "no one", "myth",
+            "started", "built", "failed", "quit", "gap",
+            "jobs", "bezos", "musk", "blakely", "edison",
+            "kodak", "netflix", "amazon", "apple"
+        ]
+        power_score = sum(1 for w in power_words if w in line.lower()) * 0.3
         scored.append((position_score + length_score + power_score, line))
 
     if not scored:
@@ -137,8 +135,7 @@ def draw_logo(img, draw, x, y, size):
     cx = x + size // 2
     cy = y + size // 2
 
-    # Outer circle only — no inner ring
-    border = max(6, size // 18)
+    border = max(5, size // 20)
     draw.ellipse(
         [(x, y), (x + size, y + size)],
         fill=LOGO_BG,
@@ -156,41 +153,23 @@ def draw_logo(img, draw, x, y, size):
         f_ai     = ImageFont.load_default()
         f_wisdom = ImageFont.load_default()
 
-    # DAILY — top, safely inside
     daily_w = draw.textlength("DAILY", font=f_daily)
-    draw.text(
-        (cx - daily_w / 2, cy - size * 0.38),
-        "DAILY",
-        font=f_daily,
-        fill=LOGO_ACCENT
-    )
+    draw.text((cx - daily_w / 2, cy - size * 0.30), "DAILY", font=f_daily, fill=LOGO_ACCENT)
 
-    # AI — center large
     ai_w = draw.textlength("AI", font=f_ai)
-    draw.text(
-        (cx - ai_w / 2, cy - size * 0.22),
-        "AI",
-        font=f_ai,
-        fill=LOGO_ACCENT
-    )
+    draw.text((cx - ai_w / 2, cy - size * 0.14), "AI", font=f_ai, fill=LOGO_ACCENT)
 
-    # Divider line
-    line_w = int(size * 0.55)
-    line_y = int(cy + size * 0.12)
+    line_w = int(size * 0.50)
+    line_y = int(cy + size * 0.18)
     draw.rectangle(
-        [(cx - line_w // 2, line_y),
-         (cx + line_w // 2, line_y + max(2, size // 60))],
-        fill=LOGO_ACCENT
+        [(cx - line_w // 2, line_y), (cx + line_w // 2, line_y + max(2, size // 55))],
+        fill=(*LOGO_ACCENT, 90)
     )
 
-    # WISDOM — bottom, safely inside
     wisdom_w = draw.textlength("WISDOM", font=f_wisdom)
-    draw.text(
-        (cx - wisdom_w / 2, cy + size * 0.19),
-        "WISDOM",
-        font=f_wisdom,
-        fill=LOGO_TEXT
-    )
+    draw.text((cx - wisdom_w / 2, cy + size * 0.24), "WISDOM", font=f_wisdom, fill=LOGO_TEXT)
+
+
 def generate_card(post_text: str, theme_index: int = None) -> str:
     os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
@@ -198,17 +177,16 @@ def generate_card(post_text: str, theme_index: int = None) -> str:
     img  = Image.new("RGB", (W, H))
     draw = ImageDraw.Draw(img)
 
+    # Rotate theme by post count — different color every post
     if theme_index is None:
-        # Rotate by total post count — different color every post
         try:
-            import json as _json
             with open("posts_log.json", "r", encoding="utf-8", errors="ignore") as f:
-                posts = _json.load(f)
+                posts = json.load(f)
             theme_index = len(posts) % len(THEMES)
         except Exception:
             theme_index = datetime.now().day % len(THEMES)
-    theme = THEMES[theme_index % len(THEMES)]
 
+    theme = THEMES[theme_index % len(THEMES)]
     draw_gradient_bg(draw, W, H, theme["bg_top"], theme["bg_bottom"])
 
     try:
@@ -228,16 +206,19 @@ def generate_card(post_text: str, theme_index: int = None) -> str:
     margin     = 80
     text_width = W - (margin * 2)
 
+    # Logo
     logo_size = 210
     logo_x    = margin
     logo_y    = 60
     draw_logo(img, draw, logo_x, logo_y, logo_size)
 
-    brand_x  = logo_x + logo_size + 28
-    brand_y  = logo_y + (logo_size // 2) - 40
+    # Brand name
+    brand_x = logo_x + logo_size + 28
+    brand_y = logo_y + (logo_size // 2) - 40
     draw.text((brand_x, brand_y),      "Daily AI Wisdom",   font=font_brand, fill=theme["text"])
     draw.text((brand_x, brand_y + 50), "dailyaiwisdom.com", font=font_sub,   fill=theme["muted"])
 
+    # Quote — hook from top of post
     quote  = extract_best_line(post_text)
     lines  = wrap_text_to_lines(quote, font_quote, draw, text_width)
     line_h = 100
@@ -260,26 +241,15 @@ def generate_card(post_text: str, theme_index: int = None) -> str:
         else:
             draw.text((margin, y), line, font=font_quote, fill=theme["text"])
 
+    # Accent bar + hashtag
     bar_y = H - 160
-    draw.rectangle(
-        [(margin, bar_y), (margin + 50, bar_y + 5)],
-        fill=theme["accent"]
-    )
-    draw.text(
-        (margin, bar_y + 18),
-        "#DailyAIWisdom",
-        font=font_tag,
-        fill=theme["muted"]
-    )
+    draw.rectangle([(margin, bar_y), (margin + 50, bar_y + 5)], fill=theme["accent"])
+    draw.text((margin, bar_y + 18), "#DailyAIWisdom", font=font_tag, fill=theme["muted"])
 
+    # Watermark
     wm   = "Daily AI Wisdom"
     wm_w = int(draw.textlength(wm, font=font_wm))
-    draw.text(
-        (W - margin - wm_w, H - 55),
-        wm,
-        font=font_wm,
-        fill=theme["muted"]
-    )
+    draw.text((W - margin - wm_w, H - 55), wm, font=font_wm, fill=theme["muted"])
 
     filename = f"post_{datetime.now().strftime('%Y-%m-%d_%H%M%S')}.png"
     filepath = os.path.join(OUTPUT_FOLDER, filename)
@@ -290,20 +260,19 @@ def generate_card(post_text: str, theme_index: int = None) -> str:
 
 
 if __name__ == "__main__":
-    test_post = """
-You've been saying I'll start Monday for 11 Mondays.
+    test_post = """Steve Jobs was 21, dropped out, and started Apple in a garage.
+No business degree. No capital. No experience.
+Just the conviction that waiting was worse than starting.
+Sara Blakely had never worked in fashion. She invented Spanx anyway.
+The myth is that successful people felt ready.
+The truth: ready comes after you start.
+Open Claude. Type: "What am I delaying because I don't feel ready?"
+Do it now.
+Everyone who built something started before they were prepared.
+What are you waiting to feel ready for?
+#DailyAIWisdom #Leadership #GrowthMindset"""
 
-Your competition started 11 Mondays ago.
-
-AI doesn't wait for motivation. It works for whoever shows up.
-
-Stop waiting to feel ready. Start today, fix it tomorrow.
-
-What's the one thing you keep delaying that could change everything?
-
-#DailyAIWisdom #Leadership #GrowthMindset
-"""
-    print("Generating all 5 theme cards...")
+    print("Generating 5 theme cards...")
     for i in range(5):
         generate_card(test_post, theme_index=i)
-    print("Done. Check the generated_images folder.")
+    print("Done. Check generated_images folder.")
