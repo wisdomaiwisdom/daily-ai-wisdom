@@ -182,7 +182,14 @@ def generate_card(post_text: str, theme_index: int = None) -> str:
     draw = ImageDraw.Draw(img)
 
     if theme_index is None:
-        theme_index = datetime.now().day % len(THEMES)
+        # Rotate by total post count — different color every post
+        try:
+            import json as _json
+            with open("posts_log.json", "r", encoding="utf-8", errors="ignore") as f:
+                posts = _json.load(f)
+            theme_index = len(posts) % len(THEMES)
+        except Exception:
+            theme_index = datetime.now().day % len(THEMES)
     theme = THEMES[theme_index % len(THEMES)]
 
     draw_gradient_bg(draw, W, H, theme["bg_top"], theme["bg_bottom"])
