@@ -194,6 +194,11 @@ def run_agent() -> str:
                         break
 
                     print(f" -> Post ready ({len(post_text)} chars)")
+                    # Ensure first character wasn't trimmed
+                    if post_text and post_text[0].islower():
+                        post_text = post_text[0].upper() + post_text[1:]
+                    print(f" -> Post ready ({len(post_text)} chars)")
+                    return post_text
                     return post_text
             else:
                 return "Error: no text generated"

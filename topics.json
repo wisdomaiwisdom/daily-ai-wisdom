@@ -73,115 +73,134 @@
     "id": 11,
     "topic": "156 hours a year explaining what you already did",
     "category": "harsh",
-    "used": false
+    "used": true,
+    "used_date": "2026-04-22"
   },
   {
     "id": 12,
     "topic": "The 14-person meeting where 3 people were actually needed",
     "category": "comedy",
-    "used": false
+    "used": true,
+    "used_date": "2026-04-22"
   },
   {
     "id": 13,
     "topic": "Career advice is written by people who succeeded in a world that no longer exists",
     "category": "harsh",
-    "used": false
+    "used": true,
+    "used_date": "2026-04-22"
   },
   {
     "id": 14,
     "topic": "The update email that 3 of 12 people read and 1 acted on",
     "category": "harsh",
-    "used": false
+    "used": true,
+    "used_date": "2026-04-22"
   },
   {
     "id": 15,
     "topic": "70% of AI pilots fail \u2014 and why it is never the technology that fails",
     "category": "ai_tip",
-    "used": false
+    "used": true,
+    "used_date": "2026-04-22"
   },
   {
     "id": 16,
     "topic": "Asking AI to do tasks vs asking AI to challenge your thinking",
     "category": "ai_tip",
-    "used": false
+    "used": true,
+    "used_date": "2026-04-22"
   },
   {
     "id": 17,
     "topic": "The 90-second AI update vs the 90-minute meeting about the update",
     "category": "ai_tip",
-    "used": false
+    "used": true,
+    "used_date": "2026-04-22"
   },
   {
     "id": 18,
     "topic": "Monday journal Tuesday podcast Friday nothing changed",
     "category": "comedy",
-    "used": false
+    "used": true,
+    "used_date": "2026-04-22"
   },
   {
     "id": 19,
     "topic": "The job you have vs the job you are doing while pretending to have it",
     "category": "harsh",
-    "used": false
+    "used": true,
+    "used_date": "2026-04-22"
   },
   {
     "id": 20,
     "topic": "The 3 conversations you never had that someone else had and got promoted",
     "category": "harsh",
-    "used": false
+    "used": true,
+    "used_date": "2026-04-22"
   },
   {
     "id": 21,
     "topic": "Waiting to feel ready is waiting for something that only starts when you stop waiting",
     "category": "motivational",
-    "used": false
+    "used": true,
+    "used_date": "2026-04-22"
   },
   {
     "id": 22,
     "topic": "The email you spent 45 minutes writing got a 3-second reply",
     "category": "comedy",
-    "used": false
+    "used": true,
+    "used_date": "2026-04-22"
   },
   {
     "id": 23,
     "topic": "Your potential is not the problem. The next step is.",
     "category": "harsh",
-    "used": false
+    "used": true,
+    "used_date": "2026-04-22"
   },
   {
     "id": 24,
     "topic": "The person who gets credit for your idea because they said it louder",
     "category": "harsh",
-    "used": false
+    "used": true,
+    "used_date": "2026-04-22"
   },
   {
     "id": 25,
     "topic": "35000 decisions a day and most are made by default",
     "category": "ai_tip",
-    "used": false
+    "used": true,
+    "used_date": "2026-04-22"
   },
   {
     "id": 26,
     "topic": "The 66 days to build a habit and why people quit on day 4",
     "category": "harsh",
-    "used": false
+    "used": true,
+    "used_date": "2026-04-22"
   },
   {
     "id": 27,
     "topic": "Bring your whole self to work \u2014 the whole self needs a nap",
     "category": "comedy",
-    "used": false
+    "used": true,
+    "used_date": "2026-04-22"
   },
   {
     "id": 28,
     "topic": "The best listeners who occasionally say something unforgettable",
     "category": "motivational",
-    "used": false
+    "used": true,
+    "used_date": "2026-04-22"
   },
   {
     "id": 29,
     "topic": "6 years of life on social media \u2014 what else that equals",
     "category": "harsh",
-    "used": false
+    "used": true,
+    "used_date": "2026-04-22"
   },
   {
     "id": 30,
