@@ -59,13 +59,14 @@ def run_agent() -> str:
     messages = [
         {
             "role": "user",
-            "content": (
+          "content": (
                 "Write today's Daily AI Wisdom LinkedIn post. "
-                "Steps:\n"
+                "Follow these steps in order:\n"
                 "1. Call get_todays_topic to get today's topic.\n"
                 "2. Call check_recent_posts to avoid repetition.\n"
-                "3. Call search_web with a focused query for a real example.\n"
-                "4. Write the post following the formula exactly.\n\n"
+                "3. Call get_trending_hashtags with today's topic.\n"
+                "4. Call search_web for a real specific example or statistic.\n"
+                "5. Write the post — harsh reality mode preferred.\n\n"
                 "IMPORTANT: Output ONLY the post. "
                 "Start directly with the hook. "
                 "No introduction. No explanation. No preamble."

@@ -72,7 +72,71 @@ def check_recent_posts(days: int = 14) -> str:
         return "Recent topics covered:\n" + "\n".join(f"- {t}" for t in recent)
     except FileNotFoundError:
         return "No post history yet — this is the first post."
+def get_trending_hashtags(topic: str, category: str) -> str:
+    """
+    Search for trending LinkedIn hashtags for this topic.
+    Returns top hashtags with follower counts where possible.
+    """
+    api_key = os.getenv("BRAVE_API_KEY")
+    if not api_key:
+        return _fallback_hashtags(category)
 
+    try:
+        response = requests.get(
+            "https://api.search.brave.com/res/v1/web/search",
+            headers={
+                "Accept": "application/json",
+                "X-Subscription-Token": api_key
+            },
+            params={
+                "q": f"trending LinkedIn hashtags {topic} 2026 most followed",
+                "count": 5
+            },
+            timeout=10
+        )
+        data = response.json()
+        results = data.get("web", {}).get("results", [])
+
+        # Extract any hashtags mentioned in results
+        import re
+        found_tags = []
+        for r in results[:3]:
+            text = r.get("title", "") + " " + r.get("description", "")
+            tags = re.findall(r'#[A-Za-z][A-Za-z0-9]+', text)
+            found_tags.extend(tags)
+
+        # Deduplicate and filter
+        seen = set()
+        unique_tags = []
+        for tag in found_tags:
+            tag_lower = tag.lower()
+            if tag_lower not in seen and tag_lower != "#dailyaiwisdom":
+                seen.add(tag_lower)
+                unique_tags.append(tag)
+
+        if len(unique_tags) >= 2:
+            top_two = unique_tags[:2]
+            return (
+                f"USE THESE HASHTAGS: #DailyAIWisdom {top_two[0]} {top_two[1]}\n"
+                f"These are trending for this topic. Use all 3 exactly as shown."
+            )
+        else:
+            return _fallback_hashtags(category)
+
+    except Exception:
+        return _fallback_hashtags(category)
+
+
+def _fallback_hashtags(category: str) -> str:
+    """Return strong default hashtags by category."""
+    defaults = {
+        "harsh":       "#DailyAIWisdom #Leadership #GrowthMindset",
+        "motivational": "#DailyAIWisdom #Leadership #Motivation",
+        "ai_tip":      "#DailyAIWisdom #AIProductivity #FutureOfWork",
+        "comedy":      "#DailyAIWisdom #Leadership #WorkLife",
+    }
+    tags = defaults.get(category, "#DailyAIWisdom #Leadership #AI")
+    return f"USE THESE HASHTAGS: {tags}\nUse all 3 exactly as shown."
 
 def execute_tool(tool_name: str, tool_input: dict) -> str:
     if tool_name == "search_web":
@@ -81,6 +145,11 @@ def execute_tool(tool_name: str, tool_input: dict) -> str:
         return get_todays_topic()
     if tool_name == "check_recent_posts":
         return check_recent_posts(tool_input.get("days", 14))
+    if tool_name == "get_trending_hashtags":
+        return get_trending_hashtags(
+            tool_input.get("topic", ""),
+            tool_input.get("category", "motivational")
+        )
     return f"Unknown tool: {tool_name}"
 
 
@@ -118,6 +187,28 @@ TOOLS = [
                 }
             },
             "required": ["query"]
+        }
+    }
+    {
+        "name": "get_trending_hashtags",
+        "description": (
+            "Search for trending LinkedIn hashtags for today's topic. "
+            "Call this AFTER get_todays_topic to get the best hashtags. "
+            "Returns 2 trending hashtags plus #DailyAIWisdom."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "topic": {
+                    "type": "string",
+                    "description": "Today's post topic"
+                },
+                "category": {
+                    "type": "string",
+                    "description": "Topic category: harsh, motivational, ai_tip, or comedy"
+                }
+            },
+            "required": ["topic"]
         }
     }
 ]
