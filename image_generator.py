@@ -65,27 +65,44 @@ def clean_text(text: str) -> str:
 
 
 def extract_best_line(post_text: str) -> str:
-    lines = [l.strip() for l in post_text.strip().split("\n") if l.strip()]
-    lines = [l for l in lines if not l.startswith("#")]
-    lines = [clean_text(l) for l in lines]
+    """Extract the most powerful line from the post."""
+    # Clean the text first
+    text = clean_text(post_text)
+
+    # Split into lines and filter
+    lines = [l.strip() for l in text.strip().split("\n") if l.strip()]
+
+    # Remove hashtags, separators, and very short lines
+    lines = [
+        l for l in lines
+        if not l.startswith("#")
+        and not all(c in "-=_ " for c in l)  # removes --- === ___
+        and len(l) > 20
+    ]
+
     if not lines:
         return "Every day is a chance to grow."
+
     scored = []
     total = len(lines)
     for i, line in enumerate(lines):
         if line.endswith("?"):
             continue
-        if len(line) < 15 or len(line) > 80:
+        if len(line) > 85:
             continue
+
         position_score = i / total
-        length_score   = 1 - (len(line) / 80)
+        length_score   = 1 - (len(line) / 85)
         power_words    = ["don't", "never", "always", "best", "real",
                           "truth", "only", "most", "every", "stop",
-                          "wake", "start", "win", "fear", "clear"]
+                          "wake", "start", "win", "fear", "clear",
+                          "gap", "not", "quit", "smarter", "harder"]
         power_score    = sum(1 for w in power_words if w in line.lower()) * 0.2
         scored.append((position_score + length_score + power_score, line))
+
     if not scored:
-        return lines[0][:70]
+        return lines[0][:75]
+
     scored.sort(reverse=True)
     return scored[0][1]
 

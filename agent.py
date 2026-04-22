@@ -39,7 +39,7 @@ def clean_preamble(text: str) -> str:
     for i, line in enumerate(lines):
         line_lower = line.strip().lower()
         is_preamble = any(signal in line_lower for signal in preamble_signals)
-        is_separator = line.strip() in ["---", "___", "==="]
+        is_separator = line.strip() in ["---", "___", "===", "──────────────────────────────────────────────────"]
  
         if is_preamble or (is_separator and i < 3):
             start_index = i + 1

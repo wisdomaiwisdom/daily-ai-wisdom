@@ -24,13 +24,15 @@
     "id": 4,
     "topic": "The morning routine that changes how you make decisions",
     "category": "motivational",
-    "used": false
+    "used": true,
+    "used_date": "2026-04-22"
   },
   {
     "id": 5,
     "topic": "What fear of failure is actually telling you",
     "category": "motivational",
-    "used": false
+    "used": true,
+    "used_date": "2026-04-22"
   },
   {
     "id": 6,
