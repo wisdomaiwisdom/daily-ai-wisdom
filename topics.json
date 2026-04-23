@@ -206,6 +206,7 @@
     "id": 30,
     "topic": "The AI skill that separates the 30% whose pilots succeed from the 70% whose fail",
     "category": "ai_tip",
-    "used": false
+    "used": true,
+    "used_date": "2026-04-23"
   }
 ]
