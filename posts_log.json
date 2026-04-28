@@ -526,5 +526,13 @@
     "text": "You block out 8 hours for \"deep work.\" You complete 90 minutes of actual work. The other 6.5 hours were spent context-switching between 4 browser tabs, 12 Slack messages, and a priority that changed twice.\n\nThis is not a time management problem. You know exactly what you need to do. You're just not clear on what matters most right now.\n\nOpen Claude. Type: \"What is the one thing I must finish today for this week to count as successful? Everything else is optional.\" The answer you get will be clearer in 30 seconds than your calendar is in 3 hours.\n\nClarity multiplies productivity. Without it, a packed schedule just means you're busy failing at multiple things simultaneously.\n\nWhat's one decision you've been postponing that, once made, would eliminate 20 other decisions?\n\n#DailyAIWisdom #Productivity #Focus",
     "chars": 815,
     "status": "pending"
+  },
+  {
+    "date": "2026-04-28",
+    "time": "12:13",
+    "topic": "Your idea got shot down. Six months later, someone else said",
+    "text": "Your idea got shot down. Six months later, someone else said it in a meeting and it got approved. The idea didn't improve. The timing didn't change. The person who said it second just had different credibility in that room.\n\nThat's not unfair. That's context. You were credible to the wrong people at the wrong moment. They were credible to the decision-maker.\n\nAI can show you this pattern. Open Claude. Paste your last 10 meeting notes. Prompt: \"Who got approval for ideas and who didn't? What was different about how they framed it? What was different about who heard it?\"\n\nWatch what changes when you stop competing for the idea and start competing for the audience.\n\nDo you know who actually shapes decisions in your organization, or are you guessing?\n\n#DailyAIWisdom #Leadership #Influence",
+    "chars": 795,
+    "status": "pending"
   }
 ]

@@ -24,8 +24,8 @@
     "id": 4,
     "topic": "The idea that got rejected in the room was approved when someone else said it 6 months later",
     "category": "harsh",
-    "used": false,
-    "used_date": "2026-04-22"
+    "used": true,
+    "used_date": "2026-04-28"
   },
   {
     "id": 5,
