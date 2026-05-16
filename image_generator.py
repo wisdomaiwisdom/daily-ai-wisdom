@@ -36,49 +36,16 @@ def clean_text(text: str) -> str:
 
 
 def extract_best_line(post_text: str) -> str:
-    """Extract the best standalone line — prefers closers that work without context."""
-    text  = clean_text(post_text)
-    lines = [l.strip() for l in text.strip().split("\n") if l.strip()]
-
-    lines = [
-        l for l in lines
-        if not l.startswith("#")
-        and not all(c in "-=_ " for c in l)
-        and not l.endswith("?")
-        and 15 < len(l) < 85
-        and not any(p in l.lower() for p in [
-            "open claude", "type:", "prompt:", "paste your",
-            "here's the", "here is the"
-        ])
-    ]
-
-    if not lines:
-        return "The work is the answer."
-
-    scored = []
-    total  = len(lines)
-    for i, line in enumerate(lines):
-        length_score = 1 - (len(line) / 85)
-        power_words  = [
-            "don't", "never", "always", "truth", "only",
-            "stop", "disappears", "accountability", "clarity",
-            "alone", "works", "myth", "control", "version",
-            "insurance", "gap", "not", "real", "win"
-        ]
-        power_score = sum(1 for w in power_words if w in line.lower()) * 0.3
-
-        # Closers work standalone — hooks often need context
-        if i == 0:
-            position_score = 0.2
-        elif i >= total - 3:
-            position_score = 1.6
-        else:
-            position_score = 0.7
-
-        scored.append((position_score + length_score + power_score, line))
-
-    scored.sort(reverse=True)
-    return scored[0][1]
+    """Get the FIRST line of the post. That's it. No exceptions."""
+    lines = post_text.strip().split("\n")
+    
+    # Return the very first line that isn't blank or a hashtag
+    for line in lines:
+        line = line.strip()
+        if line and not line.startswith("#"):
+            return line
+    
+    return "The work is the answer."
 
 
 def split_last_word(text: str) -> tuple:
@@ -209,8 +176,9 @@ def generate_card(post_text: str, theme_index: int = None) -> str:
     lines  = wrap_text_to_lines(quote, font_quote, draw, text_width)
     line_h = 96
 
-    zone_top    = logo_y + logo_size + 80
-    zone_bottom = H - 200
+    # Position quote in middle-to-lower area (avoid logo overlap)
+    zone_top    = logo_y + logo_size + 140  # More space below logo
+    zone_bottom = H - 220
     zone_center = (zone_top + zone_bottom) // 2
     total_h     = len(lines) * line_h
     start_y     = zone_center - (total_h // 2)
