@@ -1,542 +1,92 @@
 [
-  {
-    "id": 1,
-    "topic": "Time is the only currency that can't be earned back.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 2,
-    "topic": "Money buys time. That's it. Everything else is distraction.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 3,
-    "topic": "Death is coming. Most people act like they have forever.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 4,
-    "topic": "Life doesn't change. People change. Everything else stays the same.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 5,
-    "topic": "4am thoughts are the truest. They come when lies are sleeping.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 6,
-    "topic": "No plan means no roads. Every road requires a choice first.",
-    "category": "universal",
-    "used": true
-  },
-  {
-    "id": 7,
-    "topic": "With a plan, doors open. Without one, you're invisible.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 8,
-    "topic": "Silence is louder than words. Most people never learn that.",
-    "category": "universal",
-    "used": true
-  },
-  {
-    "id": 9,
-    "topic": "Fear disguises itself as safety. Most fall for it.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 10,
-    "topic": "Loneliness in a full room is the loudest silence.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 11,
-    "topic": "Everyone's drowning. Most are too proud to say it.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 12,
-    "topic": "Memories fade. Feelings stick forever.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 13,
-    "topic": "Words heal or harm. Most choose without thinking.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 14,
-    "topic": "Vulnerability looks like weakness. It's actually strength.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 15,
-    "topic": "The scar means survival. Regret means you didn't try.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 16,
-    "topic": "Apologies don't fix the past. They change the future.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 17,
-    "topic": "Healing isn't linear. Growth isn't straight. Stop expecting perfect lines.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 18,
-    "topic": "Legacy isn't what was built. It's how people felt around it.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 19,
-    "topic": "The ending is coming. How the middle goes is what matters.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 20,
-    "topic": "Everyone's scared. The brave ones just don't wait for fear to leave.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 21,
-    "topic": "You spent 30 years being who they wanted. Now there's no time for who you actually are.",
-    "category": "sad",
-    "used": false
-  },
-  {
-    "id": 22,
-    "topic": "The person you're ignoring will eventually stop calling.",
-    "category": "sad",
-    "used": false
-  },
-  {
-    "id": 23,
-    "topic": "Your parents won't be here forever. The deadline exists.",
-    "category": "sad",
-    "used": false
-  },
-  {
-    "id": 24,
-    "topic": "You regret the trip you didn't take. Not the one where everything went wrong.",
-    "category": "sad",
-    "used": false
-  },
-  {
-    "id": 25,
-    "topic": "Regret lives in what you didn't do. Not the call you didn't make.",
-    "category": "sad",
-    "used": true
-  },
-  {
-    "id": 26,
-    "topic": "You've changed so much your old self wouldn't recognize you.",
-    "category": "sad",
-    "used": false
-  },
-  {
-    "id": 27,
-    "topic": "Grief is just love with nowhere to go. It proves something mattered.",
-    "category": "sad",
-    "used": false
-  },
-  {
-    "id": 28,
-    "topic": "You're not stuck. You're just terrified of what happens when you finally move.",
-    "category": "witty",
-    "used": false
-  },
-  {
-    "id": 29,
-    "topic": "The cage door has been open for years. You just keep calling it home.",
-    "category": "dark",
-    "used": false
-  },
-  {
-    "id": 30,
-    "topic": "Most people wake up, go through motions, die the same.",
-    "category": "dark",
-    "used": false
-  },
-  {
-    "id": 31,
-    "topic": "Staying the same slowly kills you. Changing terrifies you today.",
-    "category": "dark",
-    "used": false
-  },
-  {
-    "id": 32,
-    "topic": "Your WiFi password is stronger than your bank password.",
-    "category": "funny",
-    "used": false
-  },
-  {
-    "id": 33,
-    "topic": "You've read that article six times. You still don't understand it.",
-    "category": "funny",
-    "used": false
-  },
-  {
-    "id": 34,
-    "topic": "You've planned more vacations than you've taken them.",
-    "category": "funny",
-    "used": false
-  },
-  {
-    "id": 35,
-    "topic": "Your plants died from neglect. You forgot about your goals too.",
-    "category": "funny",
-    "used": false
-  },
-  {
-    "id": 36,
-    "topic": "You say you'll do something tomorrow. Tomorrow never comes.",
-    "category": "funny",
-    "used": false
-  },
-  {
-    "id": 37,
-    "topic": "Your camera roll is all blurry photos of nothing.",
-    "category": "funny",
-    "used": false
-  },
-  {
-    "id": 38,
-    "topic": "You're better at making plans than keeping them.",
-    "category": "funny",
-    "used": false
-  },
-  {
-    "id": 39,
-    "topic": "Your inbox is a graveyard of unread emails you'll never read.",
-    "category": "funny",
-    "used": false
-  },
-  {
-    "id": 40,
-    "topic": "The alarm you set for productivity goes off. You hit snooze.",
-    "category": "funny",
-    "used": false
-  },
-  {
-    "id": 41,
-    "topic": "You've started five journals and finished none of them.",
-    "category": "funny",
-    "used": false
-  },
-  {
-    "id": 42,
-    "topic": "Awkward silences are better than empty conversations.",
-    "category": "funny",
-    "used": false
-  },
-  {
-    "id": 43,
-    "topic": "You've never looked as good in photos as you do in mirrors.",
-    "category": "funny",
-    "used": false
-  },
-  {
-    "id": 44,
-    "topic": "The groceries you bought are rotting while you order takeout.",
-    "category": "funny",
-    "used": false
-  },
-  {
-    "id": 45,
-    "topic": "The hobby you started is still gathering dust in your closet.",
-    "category": "funny",
-    "used": false
-  },
-  {
-    "id": 46,
-    "topic": "You're still wearing that shirt you swore you'd throw away.",
-    "category": "funny",
-    "used": false
-  },
-  {
-    "id": 47,
-    "topic": "The person you want to text is the person you're avoiding.",
-    "category": "funny",
-    "used": false
-  },
-  {
-    "id": 48,
-    "topic": "Your bed is the only place where time stops existing.",
-    "category": "funny",
-    "used": true
-  },
-  {
-    "id": 49,
-    "topic": "You know exactly what you should be doing right now.",
-    "category": "funny",
-    "used": false
-  },
-  {
-    "id": 50,
-    "topic": "Confidence is deciding what you think doesn't matter.",
-    "category": "witty",
-    "used": false
-  },
-  {
-    "id": 51,
-    "topic": "Success is failing faster than your competition.",
-    "category": "witty",
-    "used": false
-  },
-  {
-    "id": 52,
-    "topic": "Maturity is not raising your voice. It's raising your standards.",
-    "category": "witty",
-    "used": false
-  },
-  {
-    "id": 53,
-    "topic": "Your biggest enemy sleeps right next to you. It's your own mind.",
-    "category": "witty",
-    "used": true
-  },
-  {
-    "id": 54,
-    "topic": "The things you're afraid to say are the things people need to hear.",
-    "category": "witty",
-    "used": false
-  },
-  {
-    "id": 55,
-    "topic": "The life you want requires becoming someone you don't recognize yet.",
-    "category": "witty",
-    "used": false
-  },
-  {
-    "id": 56,
-    "topic": "You can't make someone love you. Be someone worth staying for.",
-    "category": "witty",
-    "used": false
-  },
-  {
-    "id": 57,
-    "topic": "The pain you're running from is the teacher you need.",
-    "category": "dark",
-    "used": false
-  },
-  {
-    "id": 58,
-    "topic": "You avoided that conversation. It took 10 minutes to have.",
-    "category": "dark",
-    "used": false
-  },
-  {
-    "id": 59,
-    "topic": "You can't unsay what broke them. But you can say what starts the healing.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 60,
-    "topic": "The person you stopped calling thinks you forgot them.",
-    "category": "sad",
-    "used": true
-  },
-  {
-    "id": 61,
-    "topic": "You can't control what happened. You control what's next.",
-    "category": "motivation",
-    "used": false
-  },
-  {
-    "id": 62,
-    "topic": "Time moves whether you're moving or standing still. Choose movement.",
-    "category": "motivation",
-    "used": false
-  },
-  {
-    "id": 63,
-    "topic": "The love that scared you most was the one you needed.",
-    "category": "sad",
-    "used": false
-  },
-  {
-    "id": 64,
-    "topic": "Your past doesn't determine your future. Your choices do.",
-    "category": "motivation",
-    "used": false
-  },
-  {
-    "id": 65,
-    "topic": "Resentment is poison someone else made. You're the one drinking it.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 66,
-    "topic": "The conversation you're afraid to have will save everything.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 67,
-    "topic": "Betrayal cuts deep because you let them in. That was brave.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 68,
-    "topic": "The person you could have been haunts you less than refusing to become.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 69,
-    "topic": "Silence builds walls. Words build bridges. Choose.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 70,
-    "topic": "You'll die with songs still unsung. Sing them anyway.",
-    "category": "dark",
-    "used": false
-  },
-  {
-    "id": 71,
-    "topic": "Everything you want is on the other side of fear.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 72,
-    "topic": "Some people will never understand. That's their limitation, not yours.",
-    "category": "universal",
-    "used": true
-  },
-  {
-    "id": 73,
-    "topic": "The failure worth remembering is the one where you tried.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 74,
-    "topic": "Connection happens in the uncomfortable spaces. Most avoid them.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 75,
-    "topic": "The life worth living requires becoming a stranger to comfort.",
-    "category": "universal",
-    "used": true
-  },
-  {
-    "id": 76,
-    "topic": "Money can't buy happiness. But poverty buys suffering.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 77,
-    "topic": "Time is what separates the ones who wish from the ones who do.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 78,
-    "topic": "Your future self is watching what you do today.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 79,
-    "topic": "The people who matter won't leave because of your broken parts.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 80,
-    "topic": "Growth requires dying to who you were. Most aren't ready.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 81,
-    "topic": "The gift of pain is knowing what matters.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 82,
-    "topic": "You'll wish you danced more and worried less.",
-    "category": "sad",
-    "used": false
-  },
-  {
-    "id": 83,
-    "topic": "Forgiveness is stopping the war you're having with yourself.",
-    "category": "universal",
-    "used": false
-  },
-  {
-    "id": 84,
-    "topic": "The real tragedy is knowing but not pivoting anyway.",
-    "category": "dark",
-    "used": true
-  },
-  {
-    "id": 85,
-    "topic": "You can't beg someone into loving you. Become someone worth staying for.",
-    "category": "motivation",
-    "used": false
-  },
-  {
-    "id": 86,
-    "topic": "You shrunk yourself so they'd understand you. They still didn't.",
-    "category": "sad",
-    "used": false
-  },
-  {
-    "id": 87,
-    "topic": "You gave everyone your energy until there was nothing left for you. That's not generosity, that's self-destruction.",
-    "category": "dark",
-    "used": false
-  },
-  {
-    "id": 88,
-    "topic": "You avoided a 10-minute conversation. Now it's a 10-month war inside your head.",
-    "category": "dark",
-    "used": false
-  },
-  {
-    "id": 89,
-    "topic": "You survived 100% of your worst days. That's not luck. That's you.",
-    "category": "motivation",
-    "used": false
-  },
-  {
-    "id": 90,
-    "topic": "You're allowed to outgrow people. Even if they don't understand.",
-    "category": "motivation",
-    "used": false
-  }
+  {"id": 1, "topic": "Health", "category": "universal", "used": false},
+  {"id": 2, "topic": "Exercise and movement", "category": "universal", "used": false},
+  {"id": 3, "topic": "Time management", "category": "universal", "used": false},
+  {"id": 4, "topic": "Sleep and rest", "category": "universal", "used": false},
+  {"id": 5, "topic": "Real relationships and connection", "category": "universal", "used": false},
+  {"id": 6, "topic": "Living in the present", "category": "universal", "used": false},
+  {"id": 7, "topic": "Money and wealth", "category": "universal", "used": false},
+  {"id": 8, "topic": "Focus and attention", "category": "universal", "used": false},
+  {"id": 9, "topic": "Mortality and death", "category": "universal", "used": false},
+  {"id": 10, "topic": "Daily movement and walking", "category": "universal", "used": false},
+  {"id": 11, "topic": "Nutrition and food", "category": "universal", "used": false},
+  {"id": 12, "topic": "Silence and meditation", "category": "universal", "used": false},
+  {"id": 13, "topic": "Reading and learning", "category": "universal", "used": false},
+  {"id": 14, "topic": "Saying no and boundaries", "category": "universal", "used": false},
+  {"id": 15, "topic": "Real food vs processed", "category": "universal", "used": false},
+  {"id": 16, "topic": "Building lasting things", "category": "universal", "used": false},
+  {"id": 17, "topic": "Listening and silence", "category": "universal", "used": false},
+  {"id": 18, "topic": "Self-promises and integrity", "category": "universal", "used": false},
+  {"id": 19, "topic": "Permission and confidence", "category": "universal", "used": false},
+  {"id": 20, "topic": "Personal change and growth", "category": "universal", "used": false},
+  {"id": 21, "topic": "Early morning thoughts", "category": "universal", "used": false},
+  {"id": 22, "topic": "Planning and strategy", "category": "universal", "used": false},
+  {"id": 23, "topic": "Visibility and presence", "category": "universal", "used": false},
+  {"id": 24, "topic": "Power of silence", "category": "universal", "used": false},
+  {"id": 25, "topic": "Fear and courage", "category": "universal", "used": false},
+  {"id": 26, "topic": "Loneliness", "category": "universal", "used": false},
+  {"id": 27, "topic": "Struggle and suffering", "category": "universal", "used": false},
+  {"id": 28, "topic": "Memory and emotion", "category": "universal", "used": false},
+  {"id": 29, "topic": "Power of words", "category": "universal", "used": false},
+  {"id": 30, "topic": "Vulnerability", "category": "universal", "used": false},
+  {"id": 31, "topic": "Survival and resilience", "category": "universal", "used": false},
+  {"id": 32, "topic": "Apologies and forgiveness", "category": "universal", "used": false},
+  {"id": 33, "topic": "Non-linear growth", "category": "universal", "used": false},
+  {"id": 34, "topic": "Legacy and impact", "category": "universal", "used": false},
+  {"id": 35, "topic": "Life's end and meaning", "category": "universal", "used": false},
+  {"id": 36, "topic": "Bravery and fear", "category": "universal", "used": false},
+  {"id": 37, "topic": "Resentment and letting go", "category": "universal", "used": false},
+  {"id": 38, "topic": "Difficult conversations", "category": "universal", "used": false},
+  {"id": 39, "topic": "Trust and betrayal", "category": "universal", "used": false},
+  {"id": 40, "topic": "Communication and walls", "category": "universal", "used": false},
+  {"id": 41, "topic": "Desire and goals", "category": "universal", "used": false},
+  {"id": 42, "topic": "Understanding and limits", "category": "universal", "used": false},
+  {"id": 43, "topic": "Trying and failure", "category": "universal", "used": false},
+  {"id": 44, "topic": "Connection and discomfort", "category": "universal", "used": false},
+  {"id": 45, "topic": "Comfort and growth", "category": "universal", "used": false},
+  {"id": 46, "topic": "Happiness and suffering", "category": "universal", "used": false},
+  {"id": 47, "topic": "Time and action", "category": "universal", "used": false},
+  {"id": 48, "topic": "Future self", "category": "universal", "used": false},
+  {"id": 49, "topic": "Acceptance and flaws", "category": "universal", "used": false},
+  {"id": 50, "topic": "Transformation", "category": "universal", "used": false},
+  {"id": 51, "topic": "Pain and wisdom", "category": "universal", "used": false},
+  {"id": 52, "topic": "Self-forgiveness", "category": "universal", "used": false},
+  {"id": 53, "topic": "Relationships and time", "category": "universal", "used": false},
+  {"id": 54, "topic": "Action over planning", "category": "universal", "used": false},
+  {"id": 55, "topic": "Attention as currency", "category": "universal", "used": false},
+  {"id": 56, "topic": "Experience vs possessions", "category": "universal", "used": false},
+  {"id": 57, "topic": "Learning from mistakes", "category": "universal", "used": false},
+  {"id": 58, "topic": "Travel and life", "category": "universal", "used": false},
+  {"id": 59, "topic": "Self-compassion", "category": "universal", "used": false},
+  {"id": 60, "topic": "Authenticity and judgment", "category": "universal", "used": false},
+  {"id": 61, "topic": "Productivity paradox", "category": "funny", "used": false},
+  {"id": 62, "topic": "Planning vs execution", "category": "funny", "used": false},
+  {"id": 63, "topic": "Good intentions failing", "category": "funny", "used": false},
+  {"id": 64, "topic": "Forgotten goals", "category": "funny", "used": false},
+  {"id": 65, "topic": "Tomorrow never comes", "category": "funny", "used": false},
+  {"id": 66, "topic": "Camera roll emptiness", "category": "funny", "used": false},
+  {"id": 67, "topic": "Plans and reality", "category": "funny", "used": false},
+  {"id": 68, "topic": "Digital clutter", "category": "funny", "used": false},
+  {"id": 69, "topic": "Alarm and snooze", "category": "funny", "used": false},
+  {"id": 70, "topic": "Started but never finished", "category": "funny", "used": false},
+  {"id": 71, "topic": "Awkward silence value", "category": "funny", "used": false},
+  {"id": 72, "topic": "Photo reality gap", "category": "funny", "used": false},
+  {"id": 73, "topic": "Rotting groceries", "category": "funny", "used": false},
+  {"id": 74, "topic": "Dusty hobbies", "category": "funny", "used": false},
+  {"id": 75, "topic": "Clothes and attachment", "category": "funny", "used": false},
+  {"id": 76, "topic": "Avoidance and texting", "category": "funny", "used": false},
+  {"id": 77, "topic": "Bed and time", "category": "funny", "used": false},
+  {"id": 78, "topic": "Knowing better but not doing", "category": "funny", "used": false},
+  {"id": 79, "topic": "Confidence and judgment", "category": "witty", "used": false},
+  {"id": 80, "topic": "Success and failure speed", "category": "witty", "used": false},
+  {"id": 81, "topic": "Maturity and standards", "category": "witty", "used": false},
+  {"id": 82, "topic": "Mind as enemy", "category": "witty", "used": false},
+  {"id": 83, "topic": "Unsaid words value", "category": "witty", "used": false},
+  {"id": 84, "topic": "Becoming yourself", "category": "witty", "used": false},
+  {"id": 85, "topic": "Love and worthiness", "category": "witty", "used": false},
+  {"id": 86, "topic": "Stuck vs terrified", "category": "witty", "used": false},
+  {"id": 87, "topic": "Open cage, called home", "category": "dark", "used": false},
+  {"id": 88, "topic": "Waking to die same", "category": "dark", "used": false},
+  {"id": 89, "topic": "Stagnation vs fear", "category": "dark", "used": false},
+  {"id": 90, "topic": "Known but unpivoted", "category": "dark", "used": false}
 ]
