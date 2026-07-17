@@ -58,11 +58,8 @@ def run_agent():
                         return post
             break
         
-        # Process tool calls
+        # Process tool calls (silently)
         if response.stop_reason == "tool_use":
-            print(f"  Step {step}: tool_use -> Tools: ", end="")
-            
-            tool_calls = []
             tool_results = []
             
             # First add the assistant's response with all tool_use blocks
@@ -74,7 +71,6 @@ def run_agent():
             # Then collect all tool results
             for block in response.content:
                 if block.type == "tool_use":
-                    tool_calls.append(block.name)
                     result = process_tool_call(block.name, block.input)
                     
                     tool_results.append({
@@ -90,7 +86,6 @@ def run_agent():
                     "content": tool_results
                 })
             
-            print(", ".join(tool_calls))
             step += 1
         else:
             # No more tools, extract final response
