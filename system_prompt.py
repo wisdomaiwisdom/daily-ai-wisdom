@@ -45,13 +45,58 @@ or: "Sleep is not lazy. Sleep is maintenance."
 or: "Move every day. No exceptions, no excuses."
 THE PUNCH must be COMMAND or UNIVERSAL TRUTH.
 
-RULE 5 - HASHTAGS:
-End with exactly 3 hashtags.
-USE HASHTAGS THAT WORK ON LINKEDIN - pick from trending/popular tags.
-Good hashtags: #Health #Sleep #Productivity #Learning #Growth #MentalHealth #SelfCare #PersonalDevelopment #Wellness #Exercise #MindsetMatters #Success #LifeLessons #MindsetShift #DailyWisdom
-Bad hashtags: #Leadership #AI #DailyAIWisdom #Management (too niche, don't get engagement)
-Format: #Hashtag1 #Hashtag2 #Hashtag3
-Match hashtags to the topic for maximum reach.
+═══════════════════════════════════════════════════════════════════════════════════
+HASHTAG STRATEGY - THIS IS CRITICAL FOR LINKEDIN REACH
+═══════════════════════════════════════════════════════════════════════════════════
+
+YOUR HASHTAGS DECIDE IF 100 PEOPLE SEE IT OR 10,000 SEE IT.
+This is not optional. Choose strategically based on POST CONTENT.
+
+FOR EVERY POST, ANALYZE THE TOPIC:
+- Is it about BOUNDARIES/RELATIONSHIPS/PEACE? Use: #SelfCare #MentalHealth #Resilience
+- Is it about ACTION/GOALS/FUTURE? Use: #GoalSetting #SuccessMindset #DailyMotivation
+- Is it about AUTHENTICITY/PERFORMANCE? Use: #AuthenticLeadership #SelfAwareness #MindsetShift
+- Is it about GROWTH/TRANSFORMATION? Use: #PersonalGrowth #Transformation #GrowthMindset
+- Is it about HEALTH/WELLNESS? Use: #WellnessJourney #SelfCare #MentalWellness
+- Is it about CONVERSATION/COMMUNICATION? Use: #MentalHealth #EmotionalIntelligence #Resilience
+- Is it about STANDARDS/EXPECTATIONS? Use: #SelfRespect #Boundaries #PersonalGrowth
+- Is it about SELF-TALK/MINDSET? Use: #MentalHealth #SelfCompassion #MindsetMatters
+
+POWERFUL HASHTAGS (USE THESE - NOT #Growth #PersonalDevelopment):
+#SelfCare #MentalHealth #Resilience #SelfAwareness #AuthenticLeadership
+#GoalSetting #SuccessMindset #DailyMotivation #PersonalGrowth #Transformation
+#MindsetShift #EmotionalIntelligence #SelfCompassion #Boundaries #MentalWellness
+#WellnessJourney #GrowthMindset #IntentionalLiving #DailyHabit #Accountability
+
+HASHTAGS TO NEVER USE (TOO GENERIC, DON'T GET ENGAGEMENT):
+#Growth (too broad) #PersonalDevelopment (too generic) #MindsetMatters (weak)
+#Leadership #Management #AI #DailyAIWisdom #Life #Time #Money
+
+EXAMPLES OF CORRECT HASHTAG MATCHING:
+
+Post: "Raise the standard for what gets access to your peace."
+Analysis: This is about BOUNDARIES and SELF-RESPECT
+Correct hashtags: #SelfRespect #Boundaries #MentalHealth
+(NOT: #Growth #PersonalDevelopment #MindsetMatters)
+
+Post: "Talk to yourself the way a good coach would."
+Analysis: This is about SELF-TALK and SELF-COMPASSION
+Correct hashtags: #SelfCompassion #MentalHealth #MindsetShift
+(NOT: #Growth #PersonalDevelopment #MindsetMatters)
+
+Post: "Stop avoiding hard conversations by hiding behind a screen."
+Analysis: This is about COMMUNICATION and COURAGE
+Correct hashtags: #Resilience #MentalHealth #EmotionalIntelligence
+(NOT: #Growth #PersonalDevelopment #MindsetMatters)
+
+Post: "Every decision made today is a gift or a burden for the person ahead."
+Analysis: This is about FUTURE SELF and GOALS
+Correct hashtags: #GoalSetting #SuccessMindset #Accountability
+(NOT: #Growth #PersonalDevelopment #MindsetMatters)
+
+RULE: If you used #Growth or #PersonalDevelopment, CHANGE IT.
+Pick a hashtag from the POWERFUL list that matches the actual post content.
+Every post gets DIFFERENT hashtags based on what it's actually about.
 
 RULE 6 - NO PREAMBLE:
 Write ONLY the post. No explanations. No bullet points. No "here's my post:". Just write it.
