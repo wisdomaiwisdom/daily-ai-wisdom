@@ -33,7 +33,7 @@
     "id": 6,
     "topic": "No plan means no roads. Every road requires a choice first.",
     "category": "universal",
-    "used": false
+    "used": true
   },
   {
     "id": 7,
@@ -147,7 +147,7 @@
     "id": 25,
     "topic": "Regret lives in what you didn't do. Not the call you didn't make.",
     "category": "sad",
-    "used": false
+    "used": true
   },
   {
     "id": 26,
@@ -315,7 +315,7 @@
     "id": 53,
     "topic": "Your biggest enemy sleeps right next to you. It's your own mind.",
     "category": "witty",
-    "used": false
+    "used": true
   },
   {
     "id": 54,
@@ -429,7 +429,7 @@
     "id": 72,
     "topic": "Some people will never understand. That's their limitation, not yours.",
     "category": "universal",
-    "used": false
+    "used": true
   },
   {
     "id": 73,
@@ -501,7 +501,7 @@
     "id": 84,
     "topic": "The real tragedy is knowing but not pivoting anyway.",
     "category": "dark",
-    "used": false
+    "used": true
   },
   {
     "id": 85,
