@@ -1,92 +1,542 @@
 [
-  {"id": 1, "topic": "Health", "category": "universal", "used": false},
-  {"id": 2, "topic": "Exercise and movement", "category": "universal", "used": false},
-  {"id": 3, "topic": "Time management", "category": "universal", "used": false},
-  {"id": 4, "topic": "Sleep and rest", "category": "universal", "used": false},
-  {"id": 5, "topic": "Real relationships and connection", "category": "universal", "used": false},
-  {"id": 6, "topic": "Living in the present", "category": "universal", "used": false},
-  {"id": 7, "topic": "Money and wealth", "category": "universal", "used": false},
-  {"id": 8, "topic": "Focus and attention", "category": "universal", "used": false},
-  {"id": 9, "topic": "Mortality and death", "category": "universal", "used": false},
-  {"id": 10, "topic": "Daily movement and walking", "category": "universal", "used": false},
-  {"id": 11, "topic": "Nutrition and food", "category": "universal", "used": false},
-  {"id": 12, "topic": "Silence and meditation", "category": "universal", "used": false},
-  {"id": 13, "topic": "Reading and learning", "category": "universal", "used": false},
-  {"id": 14, "topic": "Saying no and boundaries", "category": "universal", "used": false},
-  {"id": 15, "topic": "Real food vs processed", "category": "universal", "used": false},
-  {"id": 16, "topic": "Building lasting things", "category": "universal", "used": false},
-  {"id": 17, "topic": "Listening and silence", "category": "universal", "used": false},
-  {"id": 18, "topic": "Self-promises and integrity", "category": "universal", "used": false},
-  {"id": 19, "topic": "Permission and confidence", "category": "universal", "used": false},
-  {"id": 20, "topic": "Personal change and growth", "category": "universal", "used": false},
-  {"id": 21, "topic": "Early morning thoughts", "category": "universal", "used": false},
-  {"id": 22, "topic": "Planning and strategy", "category": "universal", "used": false},
-  {"id": 23, "topic": "Visibility and presence", "category": "universal", "used": false},
-  {"id": 24, "topic": "Power of silence", "category": "universal", "used": false},
-  {"id": 25, "topic": "Fear and courage", "category": "universal", "used": false},
-  {"id": 26, "topic": "Loneliness", "category": "universal", "used": false},
-  {"id": 27, "topic": "Struggle and suffering", "category": "universal", "used": false},
-  {"id": 28, "topic": "Memory and emotion", "category": "universal", "used": false},
-  {"id": 29, "topic": "Power of words", "category": "universal", "used": false},
-  {"id": 30, "topic": "Vulnerability", "category": "universal", "used": false},
-  {"id": 31, "topic": "Survival and resilience", "category": "universal", "used": false},
-  {"id": 32, "topic": "Apologies and forgiveness", "category": "universal", "used": false},
-  {"id": 33, "topic": "Non-linear growth", "category": "universal", "used": false},
-  {"id": 34, "topic": "Legacy and impact", "category": "universal", "used": false},
-  {"id": 35, "topic": "Life's end and meaning", "category": "universal", "used": false},
-  {"id": 36, "topic": "Bravery and fear", "category": "universal", "used": false},
-  {"id": 37, "topic": "Resentment and letting go", "category": "universal", "used": false},
-  {"id": 38, "topic": "Difficult conversations", "category": "universal", "used": false},
-  {"id": 39, "topic": "Trust and betrayal", "category": "universal", "used": false},
-  {"id": 40, "topic": "Communication and walls", "category": "universal", "used": false},
-  {"id": 41, "topic": "Desire and goals", "category": "universal", "used": false},
-  {"id": 42, "topic": "Understanding and limits", "category": "universal", "used": false},
-  {"id": 43, "topic": "Trying and failure", "category": "universal", "used": false},
-  {"id": 44, "topic": "Connection and discomfort", "category": "universal", "used": false},
-  {"id": 45, "topic": "Comfort and growth", "category": "universal", "used": false},
-  {"id": 46, "topic": "Happiness and suffering", "category": "universal", "used": false},
-  {"id": 47, "topic": "Time and action", "category": "universal", "used": false},
-  {"id": 48, "topic": "Future self", "category": "universal", "used": false},
-  {"id": 49, "topic": "Acceptance and flaws", "category": "universal", "used": false},
-  {"id": 50, "topic": "Transformation", "category": "universal", "used": false},
-  {"id": 51, "topic": "Pain and wisdom", "category": "universal", "used": false},
-  {"id": 52, "topic": "Self-forgiveness", "category": "universal", "used": false},
-  {"id": 53, "topic": "Relationships and time", "category": "universal", "used": false},
-  {"id": 54, "topic": "Action over planning", "category": "universal", "used": false},
-  {"id": 55, "topic": "Attention as currency", "category": "universal", "used": false},
-  {"id": 56, "topic": "Experience vs possessions", "category": "universal", "used": false},
-  {"id": 57, "topic": "Learning from mistakes", "category": "universal", "used": false},
-  {"id": 58, "topic": "Travel and life", "category": "universal", "used": false},
-  {"id": 59, "topic": "Self-compassion", "category": "universal", "used": false},
-  {"id": 60, "topic": "Authenticity and judgment", "category": "universal", "used": false},
-  {"id": 61, "topic": "Productivity paradox", "category": "funny", "used": false},
-  {"id": 62, "topic": "Planning vs execution", "category": "funny", "used": false},
-  {"id": 63, "topic": "Good intentions failing", "category": "funny", "used": false},
-  {"id": 64, "topic": "Forgotten goals", "category": "funny", "used": false},
-  {"id": 65, "topic": "Tomorrow never comes", "category": "funny", "used": false},
-  {"id": 66, "topic": "Camera roll emptiness", "category": "funny", "used": false},
-  {"id": 67, "topic": "Plans and reality", "category": "funny", "used": false},
-  {"id": 68, "topic": "Digital clutter", "category": "funny", "used": false},
-  {"id": 69, "topic": "Alarm and snooze", "category": "funny", "used": false},
-  {"id": 70, "topic": "Started but never finished", "category": "funny", "used": false},
-  {"id": 71, "topic": "Awkward silence value", "category": "funny", "used": false},
-  {"id": 72, "topic": "Photo reality gap", "category": "funny", "used": false},
-  {"id": 73, "topic": "Rotting groceries", "category": "funny", "used": false},
-  {"id": 74, "topic": "Dusty hobbies", "category": "funny", "used": false},
-  {"id": 75, "topic": "Clothes and attachment", "category": "funny", "used": false},
-  {"id": 76, "topic": "Avoidance and texting", "category": "funny", "used": false},
-  {"id": 77, "topic": "Bed and time", "category": "funny", "used": false},
-  {"id": 78, "topic": "Knowing better but not doing", "category": "funny", "used": false},
-  {"id": 79, "topic": "Confidence and judgment", "category": "witty", "used": false},
-  {"id": 80, "topic": "Success and failure speed", "category": "witty", "used": false},
-  {"id": 81, "topic": "Maturity and standards", "category": "witty", "used": false},
-  {"id": 82, "topic": "Mind as enemy", "category": "witty", "used": false},
-  {"id": 83, "topic": "Unsaid words value", "category": "witty", "used": false},
-  {"id": 84, "topic": "Becoming yourself", "category": "witty", "used": false},
-  {"id": 85, "topic": "Love and worthiness", "category": "witty", "used": false},
-  {"id": 86, "topic": "Stuck vs terrified", "category": "witty", "used": false},
-  {"id": 87, "topic": "Open cage, called home", "category": "dark", "used": false},
-  {"id": 88, "topic": "Waking to die same", "category": "dark", "used": false},
-  {"id": 89, "topic": "Stagnation vs fear", "category": "dark", "used": false},
-  {"id": 90, "topic": "Known but unpivoted", "category": "dark", "used": false}
+  {
+    "id": 1,
+    "topic": "Health",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 2,
+    "topic": "Exercise and movement",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 3,
+    "topic": "Time management",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 4,
+    "topic": "Sleep and rest",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 5,
+    "topic": "Real relationships and connection",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 6,
+    "topic": "Living in the present",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 7,
+    "topic": "Money and wealth",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 8,
+    "topic": "Focus and attention",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 9,
+    "topic": "Mortality and death",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 10,
+    "topic": "Daily movement and walking",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 11,
+    "topic": "Nutrition and food",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 12,
+    "topic": "Silence and meditation",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 13,
+    "topic": "Reading and learning",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 14,
+    "topic": "Saying no and boundaries",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 15,
+    "topic": "Real food vs processed",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 16,
+    "topic": "Building lasting things",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 17,
+    "topic": "Listening and silence",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 18,
+    "topic": "Self-promises and integrity",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 19,
+    "topic": "Permission and confidence",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 20,
+    "topic": "Personal change and growth",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 21,
+    "topic": "Early morning thoughts",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 22,
+    "topic": "Planning and strategy",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 23,
+    "topic": "Visibility and presence",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 24,
+    "topic": "Power of silence",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 25,
+    "topic": "Fear and courage",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 26,
+    "topic": "Loneliness",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 27,
+    "topic": "Struggle and suffering",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 28,
+    "topic": "Memory and emotion",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 29,
+    "topic": "Power of words",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 30,
+    "topic": "Vulnerability",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 31,
+    "topic": "Survival and resilience",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 32,
+    "topic": "Apologies and forgiveness",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 33,
+    "topic": "Non-linear growth",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 34,
+    "topic": "Legacy and impact",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 35,
+    "topic": "Life's end and meaning",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 36,
+    "topic": "Bravery and fear",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 37,
+    "topic": "Resentment and letting go",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 38,
+    "topic": "Difficult conversations",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 39,
+    "topic": "Trust and betrayal",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 40,
+    "topic": "Communication and walls",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 41,
+    "topic": "Desire and goals",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 42,
+    "topic": "Understanding and limits",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 43,
+    "topic": "Trying and failure",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 44,
+    "topic": "Connection and discomfort",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 45,
+    "topic": "Comfort and growth",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 46,
+    "topic": "Happiness and suffering",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 47,
+    "topic": "Time and action",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 48,
+    "topic": "Future self",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 49,
+    "topic": "Acceptance and flaws",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 50,
+    "topic": "Transformation",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 51,
+    "topic": "Pain and wisdom",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 52,
+    "topic": "Self-forgiveness",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 53,
+    "topic": "Relationships and time",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 54,
+    "topic": "Action over planning",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 55,
+    "topic": "Attention as currency",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 56,
+    "topic": "Experience vs possessions",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 57,
+    "topic": "Learning from mistakes",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 58,
+    "topic": "Travel and life",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 59,
+    "topic": "Self-compassion",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 60,
+    "topic": "Authenticity and judgment",
+    "category": "universal",
+    "used": false
+  },
+  {
+    "id": 61,
+    "topic": "Productivity paradox",
+    "category": "funny",
+    "used": false
+  },
+  {
+    "id": 62,
+    "topic": "Planning vs execution",
+    "category": "funny",
+    "used": false
+  },
+  {
+    "id": 63,
+    "topic": "Good intentions failing",
+    "category": "funny",
+    "used": false
+  },
+  {
+    "id": 64,
+    "topic": "Forgotten goals",
+    "category": "funny",
+    "used": false
+  },
+  {
+    "id": 65,
+    "topic": "Tomorrow never comes",
+    "category": "funny",
+    "used": false
+  },
+  {
+    "id": 66,
+    "topic": "Camera roll emptiness",
+    "category": "funny",
+    "used": false
+  },
+  {
+    "id": 67,
+    "topic": "Plans and reality",
+    "category": "funny",
+    "used": false
+  },
+  {
+    "id": 68,
+    "topic": "Digital clutter",
+    "category": "funny",
+    "used": false
+  },
+  {
+    "id": 69,
+    "topic": "Alarm and snooze",
+    "category": "funny",
+    "used": false
+  },
+  {
+    "id": 70,
+    "topic": "Started but never finished",
+    "category": "funny",
+    "used": false
+  },
+  {
+    "id": 71,
+    "topic": "Awkward silence value",
+    "category": "funny",
+    "used": false
+  },
+  {
+    "id": 72,
+    "topic": "Photo reality gap",
+    "category": "funny",
+    "used": false
+  },
+  {
+    "id": 73,
+    "topic": "Rotting groceries",
+    "category": "funny",
+    "used": false
+  },
+  {
+    "id": 74,
+    "topic": "Dusty hobbies",
+    "category": "funny",
+    "used": false
+  },
+  {
+    "id": 75,
+    "topic": "Clothes and attachment",
+    "category": "funny",
+    "used": false
+  },
+  {
+    "id": 76,
+    "topic": "Avoidance and texting",
+    "category": "funny",
+    "used": false
+  },
+  {
+    "id": 77,
+    "topic": "Bed and time",
+    "category": "funny",
+    "used": false
+  },
+  {
+    "id": 78,
+    "topic": "Knowing better but not doing",
+    "category": "funny",
+    "used": false
+  },
+  {
+    "id": 79,
+    "topic": "Confidence and judgment",
+    "category": "witty",
+    "used": true
+  },
+  {
+    "id": 80,
+    "topic": "Success and failure speed",
+    "category": "witty",
+    "used": false
+  },
+  {
+    "id": 81,
+    "topic": "Maturity and standards",
+    "category": "witty",
+    "used": false
+  },
+  {
+    "id": 82,
+    "topic": "Mind as enemy",
+    "category": "witty",
+    "used": false
+  },
+  {
+    "id": 83,
+    "topic": "Unsaid words value",
+    "category": "witty",
+    "used": false
+  },
+  {
+    "id": 84,
+    "topic": "Becoming yourself",
+    "category": "witty",
+    "used": false
+  },
+  {
+    "id": 85,
+    "topic": "Love and worthiness",
+    "category": "witty",
+    "used": false
+  },
+  {
+    "id": 86,
+    "topic": "Stuck vs terrified",
+    "category": "witty",
+    "used": false
+  },
+  {
+    "id": 87,
+    "topic": "Open cage, called home",
+    "category": "dark",
+    "used": false
+  },
+  {
+    "id": 88,
+    "topic": "Waking to die same",
+    "category": "dark",
+    "used": false
+  },
+  {
+    "id": 89,
+    "topic": "Stagnation vs fear",
+    "category": "dark",
+    "used": false
+  },
+  {
+    "id": 90,
+    "topic": "Known but unpivoted",
+    "category": "dark",
+    "used": false
+  }
 ]
