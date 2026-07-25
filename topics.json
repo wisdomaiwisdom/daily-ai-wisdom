@@ -537,6 +537,6 @@
     "id": 90,
     "topic": "Known but unpivoted",
     "category": "dark",
-    "used": false
+    "used": true
   }
 ]
